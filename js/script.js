@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     breakpoints: {
-      441: {
+      600: {
         slidesPerView: 2,
         spaceBetween: 38,
       },
@@ -271,7 +271,7 @@ let eventSwiper = new Swiper(".events-swiper", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
-  autoHeight: true,
+  roundLengths: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -281,7 +281,7 @@ let eventSwiper = new Swiper(".events-swiper", {
     clickable: true,
   },
   breakpoints: {
-    441: {
+    650: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
@@ -293,13 +293,13 @@ let eventSwiper = new Swiper(".events-swiper", {
       spaceBetween: 34,
     },
 
-    900: {
+    1023: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 27,
     },
 
-    1200: {
+    1440: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
