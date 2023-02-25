@@ -343,7 +343,7 @@
   }
 
   .events__item {
-    height: 683px;
+    min-height: 683px;
   }
 
   .events__descr {
@@ -351,7 +351,7 @@
   }
 
   .events__pic {
-    height: 29%;
+    height: 200px;
   }
 
   .events__place,
@@ -453,7 +453,15 @@
 
   .form {
     width: 100%;
+    right: 0;
+    padding: 10px 50px;
     z-index: 1002;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-right: 23px;
+    margin-left: 10px;
   }
 
   .content-wrap {
@@ -478,8 +486,6 @@
   .choices[data-type*=select-one] .choices__inner {
     padding-top: 3px;
   }
-
-
 
   .gallery__right {
     width: 100%;
@@ -950,17 +956,17 @@
     margin-bottom: 8px;
   }
 
-  .messengers__item {
+  .messengers__link {
     width: 50px;
     height: 50px;
   }
 
   .whatsapp {
-    background: url(../img/Whatsapp-Icon_50.svg) no-repeat 100%;
+    background: url(../img/Whatsapp-Icon_50.svg) no-repeat center;
   }
 
   .telegram {
-    background: url(../img/Telegram_logo_50.svg) no-repeat 100%;
+    background: url(../img/Telegram_logo_50.svg) no-repeat center;
   }
 
   .footer {
