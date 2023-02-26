@@ -1,6 +1,6 @@
 const params = {
-  btnClassName: "js-header-dropdown-btn",
-  dropClassName: "js-header-drop",
+  btnClassName: "js-styles-dropdown-btn",
+  dropClassName: "js-styles-drop",
   activeClassName: "is-active",
   disabledClassName: "is-disabled",
   tabsClass: "js-tab-btn",
@@ -153,7 +153,7 @@ const swiper = new Swiper(".js-hero-swiper", {
 /*choices*/
 
 const defaultSelect = () => {
-  const element = document.querySelector(".gallery__filter");
+  const element = document.querySelector(".gallery__filter-options");
   const choices = new Choices(element, {
     searchEnabled: false,
   });
@@ -164,7 +164,7 @@ defaultSelect();
 /*swiper gallery*/
 
 document.addEventListener("DOMContentLoaded", () => {
-  let gallerySlider = new Swiper(".slides-container", {
+  let gallerySlider = new Swiper(".gallery__slides-container", {
     slidesPerView: 1,
     grid: {
       rows: 1,
@@ -173,12 +173,12 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 20,
     loop: true,
     pagination: {
-      el: ".gallery .test-pagination",
+      el: ".gallery .gallery__slider-pagination",
       type: "fraction",
     },
     navigation: {
-      nextEl: ".test-next",
-      prevEl: ".test-prev",
+      nextEl: ".gallery__slider-next",
+      prevEl: ".gallery__slider-prev",
     },
 
     breakpoints: {
