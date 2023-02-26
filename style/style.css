@@ -1421,7 +1421,7 @@ p {
   line-height: 22px;
 }
 
-.artist__story-url {
+.catalog-url {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -1628,24 +1628,24 @@ p {
   border-right-color: var(--color-main);
 }
 
-.projects__text_url {
+.projects__text-url {
   color: var(--color-main);
 }
 
-.projects__text_url:hover {
+.projects__text-url:hover {
   color: var(--color-main);
   border-bottom: 1px solid var(--color-main);
   outline: none;
 }
 
-.projects__text_url:focus {
+.projects__text-url:focus {
   padding: 2px 5px;
   color: #fff;
   background-color: var(--color-main);
   outline: none;
 }
 
-.projects__text_url:active {
+.projects__text-url:active {
   color: #7943A4;
   border-bottom: 1px solid #7943A4;
   outline: none;
@@ -1769,11 +1769,11 @@ p {
   font-style: normal;
 }
 
-.input__field {
+.contacts__input {
   position: relative;
 }
 
-.form__input {
+.contacts__input-field {
   width: 270px;
   margin-right: 20px;
   padding: 15px 24px;
@@ -1781,13 +1781,13 @@ p {
   border-radius: 100px;
 }
 
-.form__input:hover,
-.form__input:focus {
+.contacts__input-field:hover,
+.contacts__input-field:focus {
   background-color: #ECECEC;
   outline: none;
 }
 
-.form__btn {
+.contacts__form-btn {
   max-width: 329px;
   padding: 10px 35px;
   border: 2px solid var(--color-main);
@@ -1799,25 +1799,25 @@ p {
   white-space: nowrap;
 }
 
-.form__btn:hover {
+.contacts__form-btn:hover {
   background-color: var(--color-main);
   color: #fff;
   outline: none;
 }
 
-.form__btn:focus {
+.contacts__form-btn:focus {
   outline: 2px solid var(--color-main);
   outline-offset: 2px;
 }
 
-.form__btn:active {
+.contacts__form-btn:active {
   background-color: var(--color-active);
   border-color: #D1A9F0;
   color: #fff;
   outline: none;
 }
 
-.form__btn_320 {
+.contacts__form-btn_320 {
   display: none;
 }
 
@@ -1837,7 +1837,7 @@ p {
   flex-direction: column;
 }
 
-.messengers__title {
+.contacts__messengers-title {
   line-height: 26px;
   margin-bottom: 10px;
 }

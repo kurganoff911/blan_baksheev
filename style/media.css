@@ -423,13 +423,13 @@
     flex-wrap: wrap;
   }
 
-  .form__input {
+  .contacts__input-field {
     margin-bottom: 11px;
     padding: 15px 24px;
 
   }
 
-  .form__btn {
+  .contacts__form-btn {
     max-width: 342px;
     margin-bottom: 11px;
     padding: 11px 42px;
@@ -579,11 +579,11 @@
     justify-content: space-between;
   }
 
-  .input__field {
+  .contacts__input {
     width: calc(50% - 10px);
   }
 
-  .form__input {
+  .contacts__input-field {
     width: 100%;
     margin-right: 0;
     margin-bottom: 11px;
@@ -592,7 +592,7 @@
     line-height: 32px;
   }
 
-  .form__btn {
+  .contacts__form-btn {
     padding: 11px 28px;
   }
 }
@@ -608,11 +608,11 @@
 @media (max-width: 580px) {
   .contacts__address,
   .contacts__form,
-  .form__input {
+  .contacts__input-field {
     margin-bottom: 20px;
   }
 
-  .input__field {
+  .contacts__input {
     width: 100%;
   }
   .contacts__map {
@@ -949,28 +949,26 @@
     margin-top: 1px;
   }
 
-
-
-  .form__input {
+  .contacts__input-field {
     padding: 3px 24px;
   }
 
-  .form__btn {
+  .contacts__form-btn {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     padding: 10px 33px;
   }
 
-  .form__btn_1920 {
+  .contacts__form-btn_1920 {
     display: none;
   }
 
-  .form__btn_320 {
+  .contacts__form-btn_320 {
     display: block;
   }
 
-  .messengers__title {
+  .contacts__messengers-title {
     margin-bottom: 8px;
   }
 
