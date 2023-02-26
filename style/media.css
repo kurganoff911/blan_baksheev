@@ -349,24 +349,24 @@
     margin-bottom: 23px;
   }
 
-  .swiper-slide .events__item {
+  .swiper-slide .events__slide {
     height: 683px;
   }
 
-  .events__descr {
+  .event__descr {
     padding: 14px 34px 49px 34px;
   }
 
-  .events__pic {
+  .event__pic {
     height: 200px;
   }
 
-  .events__place,
-  .events__time {
+  .event__place,
+  .event__time {
     align-self: flex-end;
   }
 
-  .events__time {
+  .event__time {
     margin-bottom: 3px;
   }
 
@@ -537,7 +537,7 @@
     margin-bottom: 10px;
   }
 
-  .events__descr {
+  .event__descr {
     padding: 14px 18px 49px 34px;
   }
 
@@ -545,12 +545,12 @@
     padding-top: 0px;
   }
 
-  .events__header {
+  .event__header {
     max-width: 220px;
     margin-bottom: 5px;
   }
 
-  .events__text {
+  .event__text {
     max-width: 240px;
   }
 
@@ -894,21 +894,21 @@
     margin-bottom: 48px;
   }
 
-  .events__descr {
+  .event__descr {
     padding: 17px 20px 49px 21px;
   }
 
-  .events__time {
+  .event__time {
     margin-bottom: 10px;
   }
 
-  .events__header {
+  .event__header {
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
   }
 
-  .events__more {
+  .event__more {
     margin-left: 7px;
   }
 

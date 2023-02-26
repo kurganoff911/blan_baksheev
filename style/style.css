@@ -1434,26 +1434,26 @@ p {
   margin-bottom: 84px;
 }
 
-.events__item {
+.events__slide {
   flex-direction: column;
   border: 1px solid #CACACA;
 }
 
-.swiper-slide .events__item {
+.swiper-slide .events__slide {
   height: 700px;
 }
 
-.events__pic {
+.event__pic {
   height: 300px;
 }
 
-.events__pic img{
+.event__pic img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.events__descr {
+.event__descr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1461,28 +1461,28 @@ p {
   flex-grow: 1;
 }
 
-.events__place,
-.events__time {
+.event__place,
+.event__time {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   color: #999999;
 }
 
-.events__time {
+.event__time {
   margin-bottom: 13px;
 }
 
-.events__header {
+.event__header {
   margin-bottom: 10px;
 }
 
-.events__more {
+.event__more {
   margin-top: auto;
   color: var(--color-main);
 }
 
-.events__more::after {
+.event__more::after {
   content: "";
   display: block;
   width: 100%;
@@ -1491,16 +1491,16 @@ p {
   background-color: var(--color-main);
 }
 
-.events__more:hover {
+.event__more:hover {
   color: var(--color-active);
   outline: none;
 }
 
-.events__more:hover::after {
+.event__more:hover::after {
   background-color: var(--color-active);
 }
 
-.events__more:focus {
+.event__more:focus {
   padding: 1px 4px 6px 4px;
   background-color: var(--color-main);
   color: #fff;
@@ -1508,17 +1508,17 @@ p {
   outline: none;
 }
 
-.events__more:focus::after {
+.event__more:focus::after {
   background-color: #fff;
 }
 
-.events__more:active {
+.event__more:active {
   color: #333;
   border-color: #333;
   outline: none;
 }
 
-.events__more:active::after {
+.event__more:active::after {
   background-color: #333;
 }
 
