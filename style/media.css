@@ -1,4 +1,8 @@
 @media (max-width: 1439px) {
+  .header__nav {
+    overflow: auto;
+  }
+
   .burger {
     display: block;
     position: relative;
@@ -660,10 +664,6 @@
     padding-top: 47px;
     padding-left: 15px;
     padding-bottom: 26px;
-  }
-
-  .nav__menu {
-    height: 224px;
   }
 
   .header__nav .nav__item:not(:last-child) {

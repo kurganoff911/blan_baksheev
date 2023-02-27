@@ -13,7 +13,7 @@ const params = {
 
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".header__nav");
-let menuLinks = document.querySelectorAll(".menu__link");
+let menuLinks = document.querySelectorAll(".nav__link");
 
 burger.addEventListener("click", function () {
   burger.classList.toggle("burger--active");
