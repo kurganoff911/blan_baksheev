@@ -171,6 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
       fill: "row",
     },
     spaceBetween: 20,
+    slidesPerGroup: 1,
     loop: true,
     pagination: {
       el: ".gallery .gallery__slider-pagination",
@@ -185,11 +186,13 @@ document.addEventListener("DOMContentLoaded", () => {
       600: {
         slidesPerView: 2,
         spaceBetween: 38,
+        slidesPerGroup: 2,
       },
 
       1200: {
         slidesPerView: 3,
         spaceBetween: 50,
+        slidesPerGroup: 3,
       },
     },
 
