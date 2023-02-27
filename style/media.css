@@ -426,7 +426,11 @@
   .contacts__input-field {
     margin-bottom: 11px;
     padding: 15px 24px;
+  }
 
+  .js-validate-error-label {
+    margin-top: -85px;
+    margin-left: 20px;
   }
 
   .contacts__form-btn {
