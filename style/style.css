@@ -658,11 +658,11 @@ p {
 .hero__btn {
   display: inline-block;
   padding: 20px 32px;
-  background-color: var(--color-main);
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: #fff;
+  background-color: var(--color-main);
   border: 3px solid var(--color-main);
   border-radius: 100px;
 }
@@ -740,13 +740,13 @@ p {
 
 /*! about*/
 
+.about__container {
+  padding-bottom: 70px;
+}
+
 .about__header {
   margin-bottom: 17px;
   line-height: 63px;
-}
-
-.about__container {
-  padding-bottom: 70px;
 }
 
 /*! gallery*/
@@ -785,20 +785,20 @@ p {
 }
 
 .choices[data-type*=select-one]:after {
+  margin-top: -6px;
   height: 8px;
   width: 8px;
   border-width: 0px;
   border-right: 1px solid #fff;
   border-top: 1px solid #fff;
   transform: rotate(135deg);
-  margin-top: -6px;
 }
 
 .choices[data-type*=select-one].is-open:after {
+  margin-top: -2px;
   border-width: 0px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  margin-top: -2px;
 }
 
 .choices__inner {
@@ -1009,9 +1009,9 @@ p {
 
 .gallery__slide::before {
   content: "";
+  display: block;
   position: relative;
   z-index: 1;
-  display: block;
   padding-top: calc(100% - 6px);
   border: 3px solid transparent;
   box-sizing: border-box;
@@ -1094,8 +1094,8 @@ p {
 }
 
 .era__item {
-  padding: 32px 0;
   width: 100%;
+  padding: 32px 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1139,20 +1139,20 @@ p {
 }
 
 .accordion__heading {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
-  margin-bottom: 0;
   margin-top: -1px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #CACACA;
-  border-right: none;
-  border-left: none;
+  margin-bottom: 0;
   padding: 41px 120px 41px 0;
   color: #333333;
   font-size: 24px;
   text-align: left;
   background-color: transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
+  border-right: none;
+  border-left: none;
   cursor: pointer;
   outline: none;
   transition: color 0.3s ease, border-color 0.3s ease;
@@ -1262,11 +1262,6 @@ p {
 .accordion__content-wrap {
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.text {
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .accordion__inner-list {
@@ -1447,7 +1442,7 @@ p {
 /*! events*/
 
 .events__container {
-  margin-bottom: 84px;
+  margin-bottom: 85px;
 }
 
 .events__slide {
@@ -1455,8 +1450,13 @@ p {
   border: 1px solid #CACACA;
 }
 
+.swiper-slide {
+  flex-grow: 1;
+}
+
 .swiper-slide .events__slide {
-  height: 700px;
+  height: 100%;
+  min-height: 700px;
 }
 
 .event__pic {
@@ -1612,7 +1612,7 @@ p {
 /*! projects*/
 
 .projects__container {
-  margin-bottom: var(--gap-container);
+  padding-bottom: var(--gap-container);
 }
 
 .projects__text {
@@ -1685,9 +1685,9 @@ p {
 }
 
 .projects__sponsors {
-  padding-top: 22px;
   align-items: center;
   justify-content: center;
+  padding-top: 22px;
 }
 
 .sponsors-swiper {
@@ -1695,8 +1695,8 @@ p {
 }
 
 .sponsor__logo {
-  height: 150px;
   justify-content: center;
+  height: 150px;
   border: 1px solid gray;
 }
 
@@ -1787,11 +1787,11 @@ p {
 /*! contacts*/
 
 .contacts__container {
-  padding-top: 38px;
-  padding-bottom: 39px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 38px;
+  padding-bottom: 39px;
   border: 1px solid #CACACA;
 }
 
@@ -1867,6 +1867,10 @@ p {
   margin-bottom: 10px;
 }
 
+.messengers__item:not(:last-child) {
+  margin-right: 20px;
+}
+
 .messengers__link {
   display: block;
   content: "";
@@ -1886,20 +1890,12 @@ p {
   outline: 1px solid var(--color-main);
 }
 
-.messengers__item:not(:last-child) {
-  margin-right: 20px;
-}
-
 .whatsapp {
   background: url(../img/Whatsapp-Icon.svg) no-repeat 100%;
 }
 
 .telegram {
   background: url(../img/Telegram_Icon.svg) no-repeat 100%;
-}
-
-.card {
-  width: 100%;
 }
 
 .contacts__map {

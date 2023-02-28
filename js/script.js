@@ -274,7 +274,9 @@ let eventSwiper = new Swiper(".events-swiper", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
-  roundLengths: true,
+  /*roundLengths: true,*/
+  setWrapperSize: true,
+  autoHeight: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -306,6 +308,7 @@ let eventSwiper = new Swiper(".events-swiper", {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
+      autoHeight: true,
     },
   },
 });

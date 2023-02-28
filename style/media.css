@@ -354,7 +354,7 @@
   }
 
   .swiper-slide .events__slide {
-    height: 683px;
+    min-height: 683px;
   }
 
   .event__descr {
@@ -371,7 +371,7 @@
   }
 
   .event__time {
-    margin-bottom: 3px;
+    margin-bottom: 6px;
   }
 
   .events-btn {
@@ -397,6 +397,14 @@
     margin: 0px 7px;
   }
 
+  .projects__text {
+    margin-bottom: 20px;
+  }
+
+  .projects__container {
+    padding-bottom: 80px;
+  }
+
   .sponsors-swiper {
     width: 818px;
   }
@@ -410,7 +418,7 @@
   }
 
   .contacts__container {
-    padding-top: 41px;
+    padding-top: 43px;
     padding-bottom: 43px;
   }
 
@@ -440,7 +448,7 @@
   .contacts__form-btn {
     max-width: 342px;
     margin-bottom: 11px;
-    padding: 11px 42px;
+    padding: 10px 42px;
   }
 
   .footer {
@@ -498,6 +506,10 @@
   .catalog__wrap {
     flex-direction: column-reverse;
     justify-content: space-between;
+  }
+
+  .gallery__container {
+    margin-bottom: 87px;
   }
 
   .gallery__filter {
@@ -563,11 +575,11 @@
   }
 
   .projects__text {
-    margin-bottom: 24px;
-  }
+    margin-bottom: 27px;
+}
 
   .projects__sponsors {
-    margin-top: 30px;
+    padding-top: 30px;
   }
 
   .sponsors-swiper {
@@ -814,9 +826,9 @@
   }
 
   .gallery__container {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     padding-top: 50px;
-    padding-bottom: 46px;
+    padding-bottom: 49px;
   }
 
   .gallery__filter {
@@ -875,18 +887,18 @@
   }
 
   .accordion__content-wrap {
-    padding-top: 21px;
-    padding-bottom: 19px;
+    padding-top: 22px;
+    padding-bottom: 20px;
   }
 
   .artist__name {
     font-weight: 600;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 31px;
   }
 
   .artist__bio {
-    padding-top: 4px;
+    padding-top: 6px;
   }
 
   .head-icon {
@@ -921,7 +933,7 @@
   }
 
   .projects__container {
-    margin-bottom: 5px
+    padding-bottom: 3px
   }
 
   .projects__text {
@@ -929,7 +941,7 @@
   }
 
   .projects__sponsors {
-    margin-top: 10px;
+    padding-top: 10px;
   }
 
   .sponsors-swiper {
@@ -944,9 +956,17 @@
     max-width: 55%;
   }
 
+  .swiper-slide:nth-child(4) .sponsor__image{
+    max-width: 40%;
+  }
+
   .contacts__container {
     border: none;
     padding-bottom: 19px;
+  }
+
+  .contacts__form {
+    margin-bottom: 9px;
   }
 
   .contacts__address {
