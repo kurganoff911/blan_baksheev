@@ -21,6 +21,7 @@
     height: 3px;
     background-color: #fff;
     transform: translateX(-50%);
+    transition: all 0.4s ease 0s;
   }
 
   .burger__line:first-child {
@@ -31,6 +32,7 @@
     width: 28px;
     top: 45%;
     left: 40%;
+    transform: scale(1) translate(-50%);
   }
 
   .burger__line:last-child {
@@ -39,10 +41,28 @@
     left: 33%;
   }
 
+  .burger--active .burger__line:nth-child(2) {
+    transform: scale(0) translate(0px, -50%) ;
+  }
+
+  .burger--active .burger__line:first-child {
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+
+  .burger--active .burger__line:last-child {
+    bottom: 0;
+    width: 36px;
+    left: 0;
+    top: 45%;
+    transform: rotate(-45deg) translate(0px, 50%);
+  }
+
   .header__nav {
     position: absolute;
     flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
     align-items: flex-start;
     left: 0;
     top: 0;
@@ -56,7 +76,7 @@
     overflow-y: auto;
     visibility: hidden;
     transform: translateX(-120%);
-    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: all 0.3s ease 0s;
   }
 
   .header__nav--active {
@@ -67,10 +87,6 @@
   .header__nav .nav__menu {
     flex-direction: column;
     margin-bottom: 78px;
-  }
-
-  .nav__menu {
-    height: 488px;
   }
 
   .header__nav .nav__item:not(:last-child) {
@@ -84,28 +100,6 @@
 
   .stop-scroll {
     overflow: hidden;
-  }
-
-  .burger--active .burger__line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger--active .burger__line:first-child {
-    left: 0;
-    top: 50%;
-    transform: rotate(45deg);
-    transform-origin: center;
-    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out, top 0.3s ease-in-out;
-  }
-
-  .burger--active .burger__line:last-child {
-    bottom: auto;
-    width: 36px;
-    left: 0;
-    top: 50%;
-    transform: rotate(-45deg);
-    transform-origin: center;
-    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out, top 0.3s ease-in-out;
   }
 
   .header__btn {
@@ -273,8 +267,12 @@
     padding: 0 50px;
   }
 
+  .logo {
+    margin: 0;
+  }
+
   .header__top {
-    padding-top: 29px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 
@@ -355,6 +353,14 @@
 
   .swiper-slide .events__slide {
     min-height: 683px;
+  }
+
+  .events__container {
+    padding-bottom: 85px;
+  }
+
+  .events__header {
+    margin-bottom: 20px;
   }
 
   .event__descr {
@@ -485,6 +491,22 @@
     background-image: url(../img/hero/hero_3_768.png);
   }
 
+  .search {
+    width: 28px;
+    height: 28px;
+  }
+
+  .search::before {
+    width: 24px;
+    height: 22px;
+    top: 2px;
+    left: 4px;
+  }
+
+  .search::after {
+    top: 19px;
+  }
+
   .form {
     width: 100%;
     right: 0;
@@ -509,7 +531,7 @@
   }
 
   .gallery__container {
-    margin-bottom: 87px;
+    margin-bottom: 85px;
   }
 
   .gallery__filter {
@@ -901,13 +923,17 @@
     padding-top: 6px;
   }
 
+  .artists__img-empty {
+    padding: 6px;
+  }
+
   .head-icon {
     width: 30px;
     height: 30px;
   }
 
   .events__container {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
   }
 
   .event__descr {

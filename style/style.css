@@ -130,6 +130,7 @@ p {
 .logo {
   width: 173px;
   height: 40px;
+  margin-right: 50px;
 }
 
 .logo img {
@@ -137,7 +138,8 @@ p {
 }
 
 .header__nav {
-  width: 78%;
+  width: 100%;
+  max-width: 1253px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -1442,7 +1444,7 @@ p {
 /*! events*/
 
 .events__container {
-  margin-bottom: 85px;
+  padding-bottom: 85px;
 }
 
 .events__slide {
