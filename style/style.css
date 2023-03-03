@@ -1619,10 +1619,15 @@ p {
 
 .projects__text {
   margin-bottom: 18px;
+  align-content: center;
 }
 
 .tooltip {
   content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -moz-transform: translateY(-50%);
   width: 16px;
   height: 16px;
   background: url(../img/tooltip.svg) no-repeat center;
