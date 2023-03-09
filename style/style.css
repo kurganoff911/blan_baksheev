@@ -84,8 +84,9 @@ p {
 }
 
 .container {
-  max-width: 1920px;
-  padding: 0 160px;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .title {
@@ -130,7 +131,7 @@ p {
 .logo {
   width: 173px;
   height: 40px;
-  margin-right: 50px;
+  margin-right: 179px;
 }
 
 .logo img {
@@ -141,7 +142,6 @@ p {
   width: 100%;
   max-width: 1253px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .nav__menu,
@@ -225,7 +225,6 @@ p {
 
 .header__bottom {
   align-items: center;
-  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -518,6 +517,8 @@ p {
 .header__search {
   position: relative;
   display: block;
+  align-self: center;
+  margin-left: auto;
   padding-top: 8px;
 }
 
@@ -633,7 +634,6 @@ p {
 }
 
 .hero__container {
-  margin-bottom: var(--gap-container);
   padding-top: 63px;
   padding-bottom: 122px;
 }
@@ -743,7 +743,8 @@ p {
 /*! about*/
 
 .about__container {
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .about__header {
@@ -754,7 +755,6 @@ p {
 /*! gallery*/
 
 .gallery__container {
-  margin-bottom: 84px;
   padding-top: 85px;
   padding-bottom: 80px;
   background: url(../img/gallery_back.png) no-repeat;
@@ -1069,7 +1069,8 @@ p {
 /*! catalog*/
 
 .catalog__container {
-  margin-bottom: 84px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .catalog__text {
@@ -1268,7 +1269,6 @@ p {
 
 .accordion__inner-list {
   width: 91%;
-  height: 288px;
   column-count: 3;
   column-fill: auto;
 }
@@ -1444,7 +1444,8 @@ p {
 /*! events*/
 
 .events__container {
-  padding-bottom: 85px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .events__slide {
@@ -1614,7 +1615,8 @@ p {
 /*! projects*/
 
 .projects__container {
-  padding-bottom: var(--gap-container);
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .projects__text {
@@ -1794,12 +1796,15 @@ p {
 /*! contacts*/
 
 .contacts__container {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  border: 1px solid #CACACA;
+}
+
+.contacts__info {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 38px;
-  padding-bottom: 39px;
-  border: 1px solid #CACACA;
 }
 
 .contacts__address {
@@ -1929,6 +1934,10 @@ p {
   padding-top: 47px;
   padding-bottom: 50px;
   background-color: #000;
+}
+
+.footer__container {
+  align-items: center;
   justify-content: space-between;
 }
 
