@@ -1,4 +1,4 @@
-@media (max-width: 1439px) {
+@media (max-width: 1280px) {
   .header__nav {
     overflow: auto;
   }
@@ -8,6 +8,7 @@
     position: relative;
     width: 36px;
     height: 28px;
+    margin: auto 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -86,6 +87,7 @@
 
   .header__nav .nav__menu {
     flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 78px;
   }
 
@@ -111,9 +113,10 @@
   .search {
     display: block;
     position: relative;
+    top: 0;
     width: 31px;
     height: 30px;
-    top: 0;
+    margin: auto 0;
     background: transparent;
     border: none;
   }
@@ -263,8 +266,8 @@
     display: none;
   }
 
-  .logo {
-    margin: 0;
+  .header__top .logo {
+    margin: 0 auto;
   }
 
   .header__top {
@@ -350,10 +353,6 @@
     min-height: 683px;
   }
 
-  .events__container {
-    padding-bottom: 85px;
-  }
-
   .events__header {
     margin-bottom: 20px;
   }
@@ -399,11 +398,7 @@
   }
 
   .projects__text {
-    margin-bottom: 20px;
-  }
-
-  .projects__container {
-    padding-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .sponsors-swiper {
@@ -465,10 +460,6 @@
 }
 
 @media (max-width: 768px) {
-  .header__nav {
-    padding-bottom: 50px;
-  }
-
   .header__btn {
     margin-top: auto;
   }
@@ -524,10 +515,6 @@
     justify-content: space-between;
   }
 
-  .gallery__container {
-    margin-bottom: 85px;
-  }
-
   .gallery__filter {
     width: 100%;
     margin-bottom: 17px;
@@ -551,7 +538,7 @@
   }
 
   .catalog__text {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .catalog__accordion {
@@ -590,7 +577,7 @@
   }
 
   .projects__text {
-    margin-bottom: 27px;
+    margin-bottom: 8px;
 }
 
   .projects__sponsors {
@@ -661,8 +648,7 @@
 
 @media (max-width: 440px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
   }
 
   .title {
@@ -731,7 +717,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+
     padding-top: 30px;
     padding-bottom: 45px;
   }
@@ -828,7 +814,8 @@
   }
 
   .about__container {
-    padding-bottom: 41px;
+    padding-top: 50px;
+    padding-bottom: 42px;
   }
 
   .about__header {
@@ -841,7 +828,6 @@
   }
 
   .gallery__container {
-    margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 49px;
   }
@@ -885,7 +871,8 @@
   }
 
   .catalog__container {
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
   }
 
   .catalog__text {
@@ -925,7 +912,8 @@
   }
 
   .events__container {
-    padding-bottom: 48px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .event__descr {
@@ -951,11 +939,12 @@
   }
 
   .projects__container {
-    padding-bottom: 3px
+    padding-top: 24px;
+    padding-bottom: 3px;
   }
 
   .projects__text {
-    margin-bottom: 52px;
+    margin-bottom: 0;
   }
 
   .projects__sponsors {

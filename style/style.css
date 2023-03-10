@@ -123,15 +123,13 @@ p {
 .header__top {
   padding-top: 30px;
   padding-bottom: 30px;
-  align-items: center;
-  justify-content: space-between;
   background-color: #000;
 }
 
 .logo {
   width: 173px;
   height: 40px;
-  margin-right: 179px;
+  margin-right: 173px;
 }
 
 .logo img {
@@ -147,6 +145,10 @@ p {
 .nav__menu,
 .styles {
   flex-wrap: wrap;
+}
+
+.nav__menu {
+  align-items: center;
 }
 
 .nav__item:not(:last-child) {
@@ -744,7 +746,7 @@ p {
 
 .about__container {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 .about__header {
@@ -1069,7 +1071,7 @@ p {
 /*! catalog*/
 
 .catalog__container {
-  padding-top: 80px;
+  padding-top: 84px;
   padding-bottom: 40px;
 }
 
@@ -1270,7 +1272,6 @@ p {
 .accordion__inner-list {
   width: 91%;
   column-count: 3;
-  column-fill: auto;
 }
 
 .accordion__painter-link.active {
@@ -1444,7 +1445,7 @@ p {
 /*! events*/
 
 .events__container {
-  padding-top: 40px;
+  padding-top: 44px;
   padding-bottom: 40px;
 }
 
@@ -1615,12 +1616,12 @@ p {
 /*! projects*/
 
 .projects__container {
-  padding-top: 40px;
+  padding-top: 42px;
   padding-bottom: 80px;
 }
 
 .projects__text {
-  margin-bottom: 18px;
+  padding-bottom: 20px;
   align-content: center;
 }
 

@@ -346,7 +346,7 @@ let sponsorSlider = new Swiper(".sponsors-swiper", {
       centeredSlides: false,
     },
 
-    1441: {
+    1280: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
