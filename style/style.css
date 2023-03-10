@@ -40,7 +40,6 @@ html {
   --color-active: #7943A4;
   --color-focus: #C283F3;
   --color-text: #333333;
-  --gap-container: 80px;
   --gap-block: 50px;
   --elements: 3;
 }
@@ -775,7 +774,6 @@ p {
 
 .gallery__header {
   color: #fff;
-  white-space: wrap;
 }
 
 .gallery__filter-label {
