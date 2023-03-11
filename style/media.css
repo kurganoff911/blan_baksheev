@@ -1,4 +1,4 @@
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .header__nav {
     overflow: auto;
   }
@@ -984,10 +984,10 @@
   }
 
   .contacts__form-btn {
+    padding: 10px 33px;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-    padding: 10px 33px;
   }
 
   .contacts__form-btn_1920 {
