@@ -769,6 +769,7 @@ p {
 .gallery__filter {
   flex-direction: column;
   width: calc(400 / 1600 * 100%);
+  margin-right: 50px;
 }
 
 .gallery__header {

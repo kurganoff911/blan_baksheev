@@ -308,6 +308,7 @@
   .gallery__filter {
     flex-direction: column;
     width: 30%;
+    margin-right: 0;
     margin-bottom: 33px;
   }
 
