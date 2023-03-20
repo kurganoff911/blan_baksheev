@@ -172,6 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     spaceBetween: 20,
     slidesPerGroup: 1,
+
     pagination: {
       el: ".gallery .gallery__slider-pagination",
       type: "fraction",
