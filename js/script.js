@@ -172,7 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     spaceBetween: 20,
     slidesPerGroup: 1,
-    loop: true,
     pagination: {
       el: ".gallery .gallery__slider-pagination",
       type: "fraction",
@@ -189,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerGroup: 2,
       },
 
-      1200: {
+      1400: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3,
@@ -274,8 +273,6 @@ let eventSwiper = new Swiper(".events-swiper", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
-  /*roundLengths: true,*/
-  setWrapperSize: true,
   autoHeight: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -325,7 +322,6 @@ let sponsorSlider = new Swiper(".sponsors-swiper", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 21,
-  loop: true,
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",

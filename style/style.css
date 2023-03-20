@@ -159,6 +159,7 @@ p {
   font-size: 18px;
   line-height: 25px;
   color: #fff;
+  transition: color .2s ease-in-out;
 }
 
 .nav__link:hover {
@@ -184,6 +185,7 @@ p {
   line-height: 25px;
   color: #fff;
   white-space: nowrap;
+  transition: color .2s ease-in-out;
 }
 
 .icon {
@@ -193,6 +195,7 @@ p {
   height: 13px;
   margin-right: 7px;
   background: url(../img/enter.svg) no-repeat center center;
+  transition: background-image .2s ease-in-out;
 }
 
 .header__btn:hover {
@@ -228,11 +231,6 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.styles {
-  width: 65%;
-  justify-content: space-between;
-}
-
 .styles__item {
   position: relative;
   color: #fff;
@@ -240,8 +238,12 @@ p {
   padding-bottom: 21px;
 }
 
-.styles__item:not(:last-child) {
+.styles__item:first-child {
   margin-left: -7px;
+}
+
+.styles__item:not(:last-child) {
+  margin-right: 89px;
 }
 
 .styles__btn {
@@ -254,7 +256,7 @@ p {
   font-weight: 400;
   line-height: 25px;
   color: #fff;
-  transition: color 0.2s ease-in-out;
+  transition: color .2s ease-in-out;
   cursor: pointer;
 }
 
@@ -278,7 +280,7 @@ p {
   margin-top: 0px;
   transform: rotate(135deg);
   transition: transform 0.5s ease;
-  transform-origin: cente;
+  transform-origin: center;
 }
 
 .styles__btn.is-active {
@@ -338,7 +340,7 @@ p {
 }
 
 .styles__dropdown-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .styles__item-link {
@@ -351,6 +353,7 @@ p {
   color: #fff;
   background-color: #000;
   background-origin: border-box;
+  border: 2px solid transparent;
   transition: border-color .3s ease;
 }
 
@@ -473,7 +476,7 @@ p {
 .styles__item-link:hover,
 .styles__item-link:focus {
   outline: none;
-  border: 2px solid var(--color-main);
+  border-color: var(--color-main);
 }
 
 .styles__item-link:active::before {
@@ -529,6 +532,7 @@ p {
   top: -2px;
   background: transparent;
   border: none;
+
 }
 
 .search__btn:hover,
@@ -551,6 +555,7 @@ p {
   width: 20px;
   border: 2px solid #fff;
   border-radius: 100%;
+  transition: border .2s ease-in-out;
 }
 
 .search__btn::after {
@@ -560,6 +565,7 @@ p {
   height: 7px;
   background: #fff;
   transform: rotate(45deg);
+  transition: background .2s ease-in-out;
 }
 
 .search__btn:hover::before {
@@ -596,6 +602,7 @@ p {
   color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
+  transition: border-color .2s ease-in-out;
 }
 
 .search__field::-webkit-input-placeholder {
@@ -667,6 +674,7 @@ p {
   background-color: var(--color-main);
   border: 3px solid var(--color-main);
   border-radius: 100px;
+  transition: border-color .2s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -762,12 +770,12 @@ p {
 }
 
 .gallery__content-wrap {
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .gallery__filter {
   flex-direction: column;
+  align-items: flex-start;
   width: calc(400 / 1600 * 100%);
   margin-right: 50px;
 }
@@ -784,6 +792,7 @@ p {
 
 .choices {
   margin-bottom: auto;
+  width: 100%;
 }
 
 .choices[data-type*=select-one]:after {
@@ -865,7 +874,7 @@ p {
   margin-bottom: auto;
 }
 
-.gallery__checkbox {
+.gallery__checkbox-field {
   cursor: pointer;
 }
 
@@ -888,6 +897,7 @@ p {
   margin-right: 8px;
   border: 1px solid #fff;
   vertical-align: middle;
+  transition: border-color .2s ease-in-out;
 }
 
 .gallery__checkbox-visible::before {
@@ -917,7 +927,10 @@ p {
   color: #fff;
 }
 
-.gallery__checkbox-field:hover~.gallery__checkbox-visible,
+.gallery__checkbox-field:hover .gallery__checkbox-visible {
+  border-color: var(--color-main);
+}
+
 .gallery__checkbox-input:focus~.gallery__checkbox-visible,
 .gallery__checkbox-input:focus~.gallery__checkbox-label,
 .gallery__checkbox-field:active~.gallery__checkbox-label {
@@ -955,6 +968,7 @@ p {
   border: 2px solid #666666;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color .2s ease-in-out;
 }
 
 .nav-btn:hover {
@@ -983,8 +997,9 @@ p {
 }
 
 .nav-btn.swiper-button-disabled {
-  cursor: auto;
+  border: none;
   background-color: rgba(102, 102, 102, 0.5);
+  cursor: auto;
 }
 
 .gallery__slider-prev {
@@ -1063,7 +1078,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*! catalog*/
@@ -1457,6 +1472,7 @@ p {
 }
 
 .swiper-slide .events__slide {
+  width: 100%;
   height: 100%;
   min-height: 700px;
 }
@@ -1546,7 +1562,6 @@ p {
 }
 
 .events-btn {
-  display: block;
   content: "";
   z-index: 101;
   right: -25px;
@@ -1601,9 +1616,9 @@ p {
   border-bottom: 1px solid #000;
 }
 
-.swiper-button-disabled,
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.events-btn.swiper-button-disabled,
+.events-btn.swiper-button-prev::after,
+.events-btn.swiper-button-next::after {
   display: none;
 }
 
@@ -1671,11 +1686,12 @@ p {
 
 .projects__text-url {
   color: var(--color-main);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s ease-in-out;
 }
 
 .projects__text-url:hover {
-  color: var(--color-main);
-  border-bottom: 1px solid var(--color-main);
+  border-color: var(--color-main);
   outline: none;
 }
 
@@ -1780,6 +1796,12 @@ p {
   transform-origin: center;
 }
 
+.sponsor-btn.swiper-button-disabled {
+  cursor: auto;
+  background-color: #ECECEC;
+  border: none;
+}
+
 .swiper-next::before {
   left: calc(50% - 10px / 2);
   border-top: 1px solid #000;
@@ -1790,6 +1812,16 @@ p {
   left: calc(50% - 5px / 2);
   border-left: 1px solid #000;
   border-bottom: 1px solid #000;
+}
+
+.swiper-button-disabled.swiper-prev::before {
+  border-left: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+}
+
+.swiper-button-disabled.swiper-next::before {
+  border-top: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
 }
 
 /*! contacts*/
@@ -1820,6 +1852,7 @@ p {
   padding: 15px 24px;
   border: 1px solid #333333;
   border-radius: 100px;
+  transition: background-color .2s ease-in-out;
 }
 
 .contacts__input-field:hover,
@@ -1838,6 +1871,7 @@ p {
   line-height: 25px;
   color: var(--color-main);
   white-space: nowrap;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 .contacts__form-btn:hover {
@@ -1889,6 +1923,7 @@ p {
   height: 40px;
   border: none;
   border-radius: 50%;
+  transition: opacity .2s ease-in-out;
 }
 
 .messengers__link:hover,
@@ -1953,6 +1988,7 @@ p {
 
 .social__link svg {
   fill: #CACACA;
+  transition: fill .2s ease-in-out;
 }
 
 .social__link:hover,
