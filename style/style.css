@@ -1464,13 +1464,18 @@ p {
   padding-bottom: 40px;
 }
 
-.events__slide {
-  flex-direction: column;
-  border: 1px solid #CACACA;
+.swiper-autoheight .swiper-slide  {
+  height: 100%;
 }
 
 .swiper-slide {
   flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.events__slide {
+  flex-direction: column;
+  border: 1px solid #CACACA;
 }
 
 .swiper-slide .events__slide {
