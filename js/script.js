@@ -19,8 +19,15 @@ burger.addEventListener("click", function () {
   burger.classList.toggle("burger--active");
 
   menu.classList.toggle("header__nav--active");
+  menu.style.transition = "all 0.3s ease 0s";
 
   document.body.classList.toggle("stop-scroll");
+});
+
+menu.addEventListener('transitionend', function () {
+  if (!menu.classList.contains("header__nav--active")) {
+    menu.removeAttribute('style');
+  }
 });
 
 menuLinks.forEach(function (el) {

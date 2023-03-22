@@ -1521,6 +1521,7 @@ p {
 .event__more {
   margin-top: auto;
   color: var(--color-main);
+  transition: color .3s ease-in-out;
 }
 
 .event__more::after {
@@ -1530,6 +1531,7 @@ p {
   height: 1px;
   margin-top: -3px;
   background-color: var(--color-main);
+  transition: background-color .3s ease-in-out;
 }
 
 .event__more:hover {
@@ -1578,6 +1580,7 @@ p {
   background-color: #ECECEC;
   border: 2px solid #ECECEC;
   border-radius: 50%;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .events-btn:hover {
@@ -1654,6 +1657,7 @@ p {
   width: 16px;
   height: 16px;
   background: url(../img/tooltip.svg) no-repeat center;
+  transition: background-image .3s ease-in-out;
 }
 
 .tooltip:hover,
