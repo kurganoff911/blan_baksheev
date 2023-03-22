@@ -159,7 +159,7 @@ p {
   font-size: 18px;
   line-height: 25px;
   color: #fff;
-  transition: color .2s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .nav__link:hover {
@@ -185,7 +185,7 @@ p {
   line-height: 25px;
   color: #fff;
   white-space: nowrap;
-  transition: color .2s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .icon {
@@ -195,7 +195,7 @@ p {
   height: 13px;
   margin-right: 7px;
   background: url(../img/enter.svg) no-repeat center center;
-  transition: background-image .2s ease-in-out;
+  transition: background-image .3s ease-in-out;
 }
 
 .header__btn:hover {
@@ -256,7 +256,7 @@ p {
   font-weight: 400;
   line-height: 25px;
   color: #fff;
-  transition: color .2s ease-in-out;
+  transition: color .3s ease-in-out;
   cursor: pointer;
 }
 
@@ -555,7 +555,7 @@ p {
   width: 20px;
   border: 2px solid #fff;
   border-radius: 100%;
-  transition: border .2s ease-in-out;
+  transition: border .3s ease-in-out;
 }
 
 .search__btn::after {
@@ -565,7 +565,7 @@ p {
   height: 7px;
   background: #fff;
   transform: rotate(45deg);
-  transition: background .2s ease-in-out;
+  transition: background .3s ease-in-out;
 }
 
 .search__btn:hover::before {
@@ -602,7 +602,7 @@ p {
   color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
-  transition: border-color .2s ease-in-out;
+  transition: border-color .3s ease-in-out;
 }
 
 .search__field::-webkit-input-placeholder {
@@ -674,7 +674,7 @@ p {
   background-color: var(--color-main);
   border: 3px solid var(--color-main);
   border-radius: 100px;
-  transition: border-color .2s ease-in-out;
+  transition: border-color .3s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -899,7 +899,7 @@ p {
   margin-right: 8px;
   border: 1px solid #fff;
   vertical-align: middle;
-  transition: border-color .2s ease-in-out;
+  transition: border-color .3s ease-in-out;
 }
 
 .gallery__checkbox-visible::before {
@@ -913,7 +913,7 @@ p {
   background-color: var(--color-main);
   opacity: 0;
   transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .gallery__checkbox-input:checked~.gallery__checkbox-visible {
@@ -970,7 +970,7 @@ p {
   border: 2px solid #666666;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color .2s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .nav-btn:hover {
@@ -1238,7 +1238,7 @@ p {
   width: 50px;
   height: 50px;
   transform: translateY(-50%) rotate(-180deg);
-  transition: background-color.3s, 0.6s ease, transform 0.3s, 0.6s ease;
+  transition: background-color .3s, 0.6s ease, transform 0.3s, 0.6s ease;
 }
 
 .head-icon-round {
@@ -1488,7 +1488,7 @@ p {
   height: 300px;
 }
 
-.event__pic img{
+.event__pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1694,7 +1694,7 @@ p {
 .projects__text-url {
   color: var(--color-main);
   border-bottom: 1px solid transparent;
-  transition: border-bottom .2s ease-in-out;
+  transition: border-bottom .3s ease-in-out;
 }
 
 .projects__text-url:hover {
@@ -1735,6 +1735,7 @@ p {
   align-self: center;
   filter: grayscale(1);
   opacity: 0.3;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .swiper-slide:hover,
@@ -1809,6 +1810,14 @@ p {
   border: none;
 }
 
+.swiper-next {
+  margin-left: 15px;
+}
+
+.swiper-prev {
+  margin-right: 15px;
+}
+
 .swiper-next::before {
   left: calc(50% - 10px / 2);
   border-top: 1px solid #000;
@@ -1859,7 +1868,7 @@ p {
   padding: 15px 24px;
   border: 1px solid #333333;
   border-radius: 100px;
-  transition: background-color .2s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .contacts__input-field:hover,
@@ -1878,7 +1887,7 @@ p {
   line-height: 25px;
   color: var(--color-main);
   white-space: nowrap;
-  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .contacts__form-btn:hover {
@@ -1930,7 +1939,7 @@ p {
   height: 40px;
   border: none;
   border-radius: 50%;
-  transition: opacity .2s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 .messengers__link:hover,
@@ -1995,7 +2004,7 @@ p {
 
 .social__link svg {
   fill: #CACACA;
-  transition: fill .2s ease-in-out;
+  transition: fill .3s ease-in-out;
 }
 
 .social__link:hover,
